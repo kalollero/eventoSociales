@@ -82,6 +82,10 @@
 .colonia {}
 .ciudad {}
 
+.contenedorBoton {
+    width: 100%;
+}
+
 .boton {
     display: flex;
     flex-direction: column;
@@ -92,7 +96,7 @@
     margin-top: 2rem;
     border-radius: .5rem;
     background-image: radial-gradient(circle at 63.38% 86.77%,  rgba(245,203,134,1) 0%, rgba(116,89,54,1) 100%);
-    font-family: 'tt_medium', sans-serif;
+    font-family: 'tt_bold', sans-serif;
     text-align: center;
     color: var(--banco);
     border: 0;
