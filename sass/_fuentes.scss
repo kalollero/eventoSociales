@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "TT" ;
+    src: url('fonts/TTCommons-Medium.woff2') format('woff2'), url('fonts/TTCommons-Medium.tff') format('tff');
+    font-weight: medium;
+    font-style: medium;
+  }
+  
+  @font-face {
+    font-family: "Rasbern-Bold" ;
+    src: url('types/Rasbern-Bold.woff2') format('woff2'), url('types/Rasbern-Bold.tff') format('tff');
+    font-weight: bold;
+    font-style: bold;
+  }
+  
+  @font-face {
+    font-family: "Rasbern-Medium" ;
+    src: url('types/Rasbern-Medium.woff') format('woff'), url('types/Rasbern-Medium.tff') format('tff');
+    font-weight: medium;
+    font-style: medium;
+  }

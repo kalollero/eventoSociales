@@ -1,0 +1,252 @@
+* {
+    text-align: center;
+}
+
+.fecha,
+.ceremonia,
+.recepcion,
+.acceso,
+.codigoVestimenta,
+.confirmacion,
+.mesaRegalos,
+.gratitud,
+.exit {
+    margin: 0 5% 0 5%;
+    /*border: 1px orange dashed;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ---------------------------------
+--------- BASE INFORMACIÓN ---------
+-----------------------------------*/
+
+.icono {
+    height: 16vw;
+    margin-bottom: 1.5rem;
+}
+
+.titulo {
+    letter-spacing: .25rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+.frase {
+    line-height: 1.2;
+}
+
+.frase,
+.date,
+.lugar,
+.pax,
+.vestimenta,
+.muchas,
+.gracias {
+    font-family: 'rasbernmedium';
+}
+
+/*. {
+    font-family: 'rasbernregular';
+}*/
+
+.hora,
+.texto {
+    font-family: 'rasbernitalic';
+}
+
+.hora {margin: 1rem 0;}
+
+.colonia,
+.ciudad {
+    margin-top: .25rem;
+    font-family: 'tt_light', sans-serif;
+}
+
+.direccion {
+    font-family: 'tt_regular', sans-serif;
+}
+
+.colonia {}
+.ciudad {}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    background-image: radial-gradient(circle at 63.38% 86.77%,  rgba(245,203,134,1) 0%, rgba(116,89,54,1) 100%);
+    font-family: 'tt_bold', sans-serif;
+}
+
+/* ------------------------------------
+--------- D E S G L O S A D O ---------
+------------------------------------ */
+
+
+/* ---------- INTRO ----------*/
+
+.intro {
+    height: 100vh;
+    padding: 0 5% 0% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../images/xinemaBack.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    .logo {
+        margin-bottom: 10vh;
+    }
+}
+
+/* ---------- INTRO ----------*/
+
+.fecha {
+    height: 60vh;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+
+    .frase {
+        letter-spacing: .25rem;
+        margin-bottom: .8rem;
+    }
+
+    .titulo {
+        margin-bottom: 2rem;
+    }
+
+    .day {
+        letter-spacing: .25rem;
+        font-family: 'TT_light';
+    }
+
+    .linea { 
+        width: 100%;
+        height: 3px;
+        background: orange;
+        margin: 8px 0 8px 0;
+        background: rgb(116,89,54);
+        background: linear-gradient(90deg, rgba(116,89,54,1) 0%, rgba(245,203,134,1) 65%, rgba(116,89,54,1) 100%);
+    }
+
+    .date {
+        margin: 6px 0 2px 0;
+        font-family: 'rasbernmedium';
+        letter-spacing: .3rem;
+    }
+
+    .year {
+        margin: .5rem 0 0 0;
+        letter-spacing: .25rem;
+        font-family: 'TT_light';
+    }
+}
+
+/* ---------- CEREMONIA ----------*/
+
+.ceremonia {
+    min-height: 80vh;
+
+    .inter {
+        margin-top: 3rem;
+    }
+}
+
+/* ---------- RECEPCIÓN ----------*/
+
+.recepcion {
+    min-height: 60vh;
+}
+
+/* ---------- ACCESO ----------*/
+.acceso {
+    min-height: 100vh;
+
+
+    .pax {
+        margin: 1rem 0;
+    }
+
+    div:nth-child(7) {
+        margin: 2rem 0 0 0;
+    }
+}
+
+/* ---------- VESTIMENTA ----------*/
+.codigoVestimenta {
+    min-height: 30vh;
+}
+
+/* ---------- REGALOS ----------*/
+.mesaRegalos {
+    min-height: 100vh;
+    
+    .frase {
+        font-family: 'rasbernregular';
+        line-height: 110%;
+        margin-bottom: 2rem;
+    }
+
+    .liverpool,
+    .datosBancaria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2rem;
+        width: 100%;
+        
+        .h4 { 
+            margin-bottom: .25rem;
+            font-family: 'tt_regular', sans-serif;
+            letter-spacing: .10rem;
+        }
+        .boton {margin: 0;}
+    }
+    
+    .banco {
+        margin: .25rem 0;
+        font-family: 'tt_regular', sans-serif;
+    }
+}
+
+/* ---------- GRATITUD ----------*/
+.gratitud {
+    min-height: 40vh;
+    
+    
+    .agradecimiento {
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: 50% 50%;
+        width: 100%;
+        margin-top: 2rem;
+
+        .muchas{
+            text-align: left;
+            grid-column: 1/9;
+            grid-row: 1/2;
+        }
+
+        .gracias{
+            text-align: right;
+            grid-column: 2/11;
+            grid-row: 2/3;
+        }
+    }
+}
+
+/* ---------- EXIT ----------*/
+.exit {
+    height: 10vh;
+}

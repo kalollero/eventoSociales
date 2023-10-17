@@ -1,0 +1,93 @@
+.menu  { z-index: 20; }
+.nav { z-index: 18; }
+.inicio { z-index: 16; }
+.lucyCastillo { z-index: 16; }
+.sobreMi { z-index: 16; }
+.servicios { z-index: 16; }
+.contacto { z-index: 16; }
+
+
+.inicio,
+.lucyCastillo,
+.sobreMi,
+.servicios,
+.contacto {
+	display: grid;
+
+	@include sm {
+		padding: 2rem;
+		grid-template-columns: repeat(4,auto);
+		grid-column-gap: 1rem;
+	}
+
+	@include md {
+		padding: 3rem;
+		grid-template-columns: repeat(8,auto);
+		grid-column-gap: 1rem;
+	}
+
+	@include lg {
+		padding: 6rem;
+		grid-template-columns: repeat(12,auto);
+		grid-column-gap: 1rem;
+	}
+
+	@include xl {
+	}
+}
+
+
+//////// FUENTE ////////
+
+.thin {}
+.extra-light {}
+.light {}
+.regular { font-weight: 400; }
+.medium {}
+.semiBold {}
+.bold { font-weight: 700; }
+.extraBold {}
+.black {}
+
+//////// VISTA ////////
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+
+.imagen-fluida {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+///////////////////////////////////////////////////
+
+
+
+
+.base {
+
+
+	@include sm {
+		
+	}
+
+	@include md {
+		
+	}
+
+	@include lg {
+		
+	}
+}
+

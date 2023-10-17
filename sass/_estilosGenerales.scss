@@ -1,0 +1,152 @@
+//////// Media Queries ////////
+
+@import "_media_queries.scss";
+
+
+//////// IMPORT FONT ////////
+	// Fuente Playfair Display · 400 | 700 | 900
+	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
+	
+	// Fuente Roboto · 400 | 700 | 900
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+//////// GENERALES ////////
+
+
+html,body { }
+
+:root {
+	--verde: #00B3A1;
+	--verdeOscuro: #1B3537;
+	--azul: #3c4fa8;
+	--blanco: #FBFBFB;
+	--negro: #1B2728;
+
+	--verdePistache: #57D9BA;
+	--verdeIntenso: #00C1A1;
+	--gray: #DBE2E9;
+
+	// --fuenteTitulos: "Roboto";
+	// --fuenteTexto: "Playfair Display";
+	//--fuenteBotones: "Roboto";
+
+	///// ERRORES //////////
+	// --border: "1px dashed orange";
+
+
+
+
+	@include sm {
+	}
+
+	@include md {
+		// font-size: 1.2rem;
+	}
+
+	@include lg {
+		// font-size: 1.3rem;
+	}
+
+	@include xl {
+	}
+}
+
+//////// SECCIONES ////////
+
+.nav  { z-index: 20; }
+.home { z-index: 18; }
+.about { z-index: 16; }
+.description { z-index: 16; }
+.video { z-index: 16; }
+.writers { z-index: 16; }
+.reviews { z-index: 16; }
+.stores { z-index: 16; }
+.foote { z-index: 16; }
+
+
+
+.home {
+	width: 100%;
+	display: grid;
+
+	@include sm {
+		grid-template-columns: 1rem repeat(4,auto) 1rem;
+		grid-column-gap: 1rem;
+	}
+
+	@include md {
+		grid-template-columns: 2rem repeat(8,auto) 2rem;
+		grid-column-gap: 1rem;
+	}
+
+	@include lg {
+		grid-template-columns: 3rem repeat(12, 1fr) 3rem;
+		grid-column-gap: 1rem;
+	}
+
+	@include xl {
+	}
+}
+
+
+//////// FUENTE ////////
+
+.thin {}
+.extra-light {}
+.light {}
+.regular { font-weight: 400; }
+.medium {}
+.semiBold {}
+.bold { font-weight: 700; }
+.extraBold {}
+.black { font-weight: 900;}
+
+em { 
+	font-weight: 700; 
+	color: #00C1A1; 
+}
+//////// LINKS ////////
+
+a {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 1.25rem;
+	letter-spacing: 1.5;
+}
+//////// ICONS ////////
+
+.svg-inline--fa.fa-w-14,
+.svg-inline--fa.fa-w-18 {
+	font-size: 1.5rem;
+	color: var(--gray);
+}
+
+.svg-inline--fa.fa-w-14:hover,
+.svg-inline--fa.fa-w-18:hover { color: var(--azul); }
+
+
+.fa-long-arrow-right {
+	font-size: 16px;
+	color: var(--oscuro);
+}
+
+////////  ////////
+
+///////////////////////////////////////////////////
+
+.base {
+
+
+	@include sm {
+		
+	}
+
+	@include md {
+		
+	}
+
+	@include lg {
+		
+	}
+}
+
