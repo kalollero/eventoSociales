@@ -51,13 +51,13 @@ html(lang='en')
 
         //Agora Style
         link(rel='stylesheet', href='css/styles.css')
-    
+
         //script(type='text/javascript').
       
     body
         div.intro 
             img.logo.imagen-fluida(src="images/logo.svg", alt="")
-   
+            
         div.fecha
             div.h2.frase Estás Invitado
             div.h6.titulo
@@ -83,8 +83,8 @@ html(lang='en')
             div.h3.direccion Paseo de las Palmas no. 1 
             div.h6.colonia Jardines de las Ánimas. Xalapa, Veracruz.
             div.h6.ciudad
-            div.h6.boton
-                a(href="http://", target="_blank", rel="noopener noreferrer") M A P A
+            div.boton
+                a.h5(href="https://maps.app.goo.gl/oG8Hjzp4qWqMH21v5", target="_blank") M A P A
             div.h6.titulo.inter
                 | DESPUÉS DE LA
                 br
@@ -106,8 +106,8 @@ html(lang='en')
             div.h3.direccion Avenida Xalapa no. 247
             div.h6.colonia Col. Rafael Lucio. · Xalapa, Veracruz.
             div.h5.ciudad
-            div.h6.boton
-                a(href="http://", target="_blank", rel="noopener noreferrer") M A P A
+            div.boton
+                a.h5(href="https://maps.app.goo.gl/FGZCmKZTtNG7bQam6", target="_blank") M A P A
         
         div.acceso
             img.imagen-fluida.icono(src="images/acceso.svg", alt="")
@@ -131,7 +131,7 @@ html(lang='en')
                 br
                 | TU ASISTENCIA.
             div.boton
-                a.h6(href="http://", target="_blank", rel="noopener noreferrer") CONFIRMAR ASISTENCIA
+                a.h5(href="http://", target="_blank", rel="noopener noreferrer") CONFIRMAR ASISTENCIA
            
 
         div.codigoVestimenta
@@ -157,17 +157,15 @@ html(lang='en')
             div.liverpool
                 div.h4 LIVERPOOL 
                 div.boton
-                    a(href="http://", target="_blank", rel="noopener noreferrer") 51308331
+                    a.h5(href="http://", target="_blank", rel="noopener noreferrer") 51308331
             div.datosBancaria
                 div.h4 BBVA 
-                div.boton
-                    a(href="http://", target="_blank", rel="noopener noreferrer") DATOS BANCARIOS
-
-        //
-            div.h6.titulo 
-            div.h4.banco CUENTA · 0808080808
-            div.h4.banco CLABE · 08080808
-            div.h4.banco TARJETA · 0808080808
+                div.widget
+                    button.h5.boton#toggleBtn DATOS BANCARIOS
+                    ul.bancoLista
+                        li.h4.banco CUENTA · 0808080808
+                        li.h4.banco CLABE · 08080808
+                        li.h4.banco TARJETA · 0808080808
 
         div.gratitud 
             div.h2.texto
@@ -184,3 +182,5 @@ html(lang='en')
 
         div.exit
             //img.logo.imagen-fluida(src="images/logo.svg", alt="")
+        
+        script(src='js/script.js')

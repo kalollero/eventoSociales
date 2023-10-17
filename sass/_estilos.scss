@@ -1,6 +1,14 @@
 * {
     text-align: center;
+    /*border: 1px orange dashed;*/
 }
+
+/*body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/backgroundDorado.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}*/
 
 .fecha,
 .ceremonia,
@@ -35,6 +43,7 @@
     margin-bottom: 2rem;
     line-height: 1.2;
 }
+
 .frase {
     line-height: 1.2;
 }
@@ -77,13 +86,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
     border-radius: .5rem;
     background-image: radial-gradient(circle at 63.38% 86.77%,  rgba(245,203,134,1) 0%, rgba(116,89,54,1) 100%);
-    font-family: 'tt_bold', sans-serif;
+    font-family: 'tt_medium', sans-serif;
+    text-align: center;
+    color: var(--banco);
+    border: 0;
 }
 
 /* ------------------------------------
@@ -211,13 +223,25 @@
             font-family: 'tt_regular', sans-serif;
             letter-spacing: .10rem;
         }
-        .boton {margin: 0;}
+        .boton {
+            margin: 0;
+        }
+        
+        .bancoLista { 
+            list-style: none;
+            padding: 0;
+            display: none;
+            margin: 2rem 0 0 0;
+            opacity: 0;
+            transition: display 1s ease-in-out;
+        }
+
+        .visible {
+            display: block;
+            opacity: 1;
+        }
     }
     
-    .banco {
-        margin: .25rem 0;
-        font-family: 'tt_regular', sans-serif;
-    }
 }
 
 /* ---------- GRATITUD ----------*/

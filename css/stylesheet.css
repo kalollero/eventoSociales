@@ -55,6 +55,18 @@
 
 }
 
+@font-face {
+    font-family: 'tt_extrabold';
+    src: url('../fonts/ttcommons-extrabold-webfont.eot');
+    src: url('../fonts/ttcommons-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ttcommons-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/ttcommons-extrabold-webfont.woff') format('woff'),
+         url('../fonts/ttcommons-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/ttcommons-extrabold-webfont.svg#tt_commonsextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'tt_medium';
