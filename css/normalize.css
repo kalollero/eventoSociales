@@ -39,9 +39,8 @@ body {
   --profundoTransparente: rgba(23, 23, 23, 0.5);
   --navyTransparente: rgba(0, 7, 36, 0.5);
   /*--sombra*/
-  color: var(--claro);
+  color: var(--blanco);
   background-color: var(--negro);
-  background-color: #0d1015;
 }
 
 article,
