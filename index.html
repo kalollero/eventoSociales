@@ -40,79 +40,145 @@
     <!--script(type='text/javascript').-->
   </head>
   <body>
-    <div class="intro">
-      <div class="fondoLogo"></div><img class="logo imagen-fluida" src="images/logo.svg" alt="">
+    <div class="videos">
+      <video width="320" height="240" controls>
+        <source src="videos/libroReel.mp4" type="video/mp4">
+      </video>
     </div>
-    <div class="fecha">
-      <div class="h2 frase">Estás Invitado</div>
-      <div class="h6 titulo">TE ESPERO PARA CELEBRAR<br>JUNTOS EL DÍA:</div>
-      <div class="h4 day">SÁBADO</div>
-      <div class="linea"></div>
-      <div class="h2 date">18 · NOVIEMBRE</div>
-      <div class="linea"></div>
-      <div class="h4 year">DOS MIL VEINTITRÉS </div>
+    <div class="videos">
+      <video width="320" height="240" controls>
+        <source src="videos/serie.mp4" type="video/mp4">
+      </video>
     </div>
-    <div class="ceremonia"> <img class="imagen-fluida icono" src="images/ceremonia.svg" alt="">
-      <div class="h6 titulo">CEREMONIA</div>
-      <div class="h1 lugar">
-         Parroquia de<br>Nuestra Señora<br>de la Paz</div>
-      <div class="h2 hora">19:00 hrs.</div>
-      <div class="h3 direccion">Paseo de las Palmas no. 1 </div>
-      <div class="h6 colonia">Jardines de las Ánimas. Xalapa, Veracruz.</div>
-      <div class="h6 ciudad"></div>
-      <div class="contenedorBoton"><a class="h5 boton" href="https://maps.app.goo.gl/oG8Hjzp4qWqMH21v5" target="_blank">M A P A</a></div>
-      <div class="h6 titulo inter">DESPUÉS DE LA<br>CEREMONIA RELIGIOSA,<br>AGRADECERÍA TU <br>PRESENCIA EN:</div>
-    </div>
-    <div class="recepcion"><img class="imagen-fluida icono" src="images/recepcion.svg" alt="">
-      <div class="h6 titulo">RECEPCIÓN</div>
-      <div class="h1 lugar">Salón<br>Ghal “A”</div>
-      <div class="h3 hora">20:00 hrs.</div>
-      <div class="h3 direccion">Avenida Xalapa no. 247</div>
-      <div class="h6 colonia">Col. Rafael Lucio. · Xalapa, Veracruz.</div>
-      <div class="h5 ciudad"></div>
-      <div class="h5 contenedorBoton"><a class="boton" href="https://maps.app.goo.gl/FGZCmKZTtNG7bQam6" target="_blank">M A P A</a></div>
-    </div>
-    <div class="acceso"><img class="imagen-fluida icono" src="images/acceso.svg" alt="">
-      <div class="h6 titulo">ACCESO</div>
-      <div class="h6 titulo">COMPARTE<br>CONMIGO ESTE<br>DÍA INOLVIDABLE.</div>
-      <div class="h2 texto">He reservado</div>
-      <div class="h1 pax">1 lugar</div>
-      <div class="h2 texto">para ti.</div>
-      <div class="h6 titulo">ES MUY IMPORTANTE<br>PARA MI QUE CONFIRMES<br>TU ASISTENCIA.</div>
-      <div class="h5 contenedorBoton"><a class="boton" href="https://wa.me/522281161639?text=Hola%20Ximena,%20soy%20(Poner%20Nombre)%20y%20te%20escribo%20para%20confirmar%20mi%20asistencia." target="_blank">CONFIRMAR ASISTENCIA</a></div>
-    </div>
-    <div class="codigoVestimenta"><img class="imagen-fluida icono" src="images/vestimenta.svg" alt="">
-      <div class="h6 titulo">CÓDIGO DE VESTIMENTA</div>
-      <div class="h1 vestimenta">Formal de Noche</div>
-    </div>
-    <div class="mesaRegalos"><img class="imagen-fluida icono" src="images/regalo.svg" alt="">
-      <div class="h6 titulo">MESA DE REGALOS</div>
-      <div class="h3 frase">Mi mejor regalo es<br>tu presencia, si<br>además quisieras<br>hacerme un obsequio<br>lo aprecio con <br>agradecimiento.</div>
-      <div class="liverpool">
-        <div class="h4">LIVERPOOL </div>
-        <div class="h5 contenedorBoton"><a class="boton" href="https://mesaderegalos.liverpool.mx/LP/51308331/Ximena_" target="_blank" rel="noopener noreferrer">51308331</a></div>
-      </div>
-      <!--div.datosBancaria
-      div.h4 BBVA 
-      div.contenedorBoton
-          button.h5.boton#toggleBtn DATOS BANCARIOS
-          ul.bancoLista
-              li.h4.banco CUENTA · 0808080808
-              li.h4.banco CLABE · 08080808
-              li.h4.banco TARJETA · 0808080808
-      
-      -->
-    </div>
-    <div class="gratitud"> 
-      <div class="h2 quote">Los mejores<br>momentos de la<br>vida merencen ser<br>compartidos.</div>
-      <div class="agradecimiento">
-        <div class="h1 muchas">¡Gracias por</div>
-        <div class="h1 gracias">Acompañarme!</div>
-      </div>
-    </div>
-    <div class="exit">
-      <!--img.logo.imagen-fluida(src="images/logo.svg", alt="")-->
-    </div>
-    <!--script(src='js/script.js')-->
   </body>
+  <!--
+  div.intro
+      div.fondoLogo
+      img.logo.imagen-fluida(src="images/logo.svg", alt="")
+      
+  div.fecha
+      div.h2.frase Estás Invitado
+      div.h6.titulo
+          | TE ESPERO PARA CELEBRAR
+          br
+          | JUNTOS EL DÍA:
+      div.h4.day SÁBADO
+      div.linea
+      div.h2.date 18 · NOVIEMBRE
+      div.linea
+      div.h4.year DOS MIL VEINTITRÉS 
+  
+  div.ceremonia 
+      img.imagen-fluida.icono(src="images/ceremonia.svg", alt="")
+      div.h6.titulo CEREMONIA
+      div.h1.lugar 
+          | Parroquia de
+          br
+          | Nuestra Señora
+          br
+          | de la Paz
+      div.h2.hora 19:00 hrs.
+      div.h3.direccion Paseo de las Palmas no. 1 
+      div.h6.colonia Jardines de las Ánimas. Xalapa, Veracruz.
+      div.h6.ciudad
+      div.contenedorBoton
+          a.h5.boton(href="https://maps.app.goo.gl/oG8Hjzp4qWqMH21v5", target="_blank") M A P A
+      div.h6.titulo.inter
+          | DESPUÉS DE LA
+          br
+          | CEREMONIA RELIGIOSA,
+          br
+          | AGRADECERÍA TU 
+          br
+          | PRESENCIA EN:
+  
+  
+  div.recepcion
+      img.imagen-fluida.icono(src="images/recepcion.svg", alt="")
+      div.h6.titulo RECEPCIÓN
+      div.h1.lugar
+          | Salón
+          br
+          | Ghal “A”
+      div.h3.hora 20:00 hrs.
+      div.h3.direccion Avenida Xalapa no. 247
+      div.h6.colonia Col. Rafael Lucio. · Xalapa, Veracruz.
+      div.h5.ciudad
+      div.h5.contenedorBoton
+          a.boton(href="https://maps.app.goo.gl/FGZCmKZTtNG7bQam6", target="_blank") M A P A
+  
+  div.acceso
+      img.imagen-fluida.icono(src="images/acceso.svg", alt="")
+      div.h6.titulo ACCESO
+      div.h6.titulo
+          | COMPARTE
+          br
+          | CONMIGO ESTE
+          br
+          | DÍA INOLVIDABLE.
+      div.h2.texto He reservado
+      div.h1.pax
+          | 1 lugar
+      div.h2.texto para ti.
+      div.h6.titulo
+          | ES MUY IMPORTANTE
+          br
+          | PARA MI QUE CONFIRMES
+          br
+          | TU ASISTENCIA.
+      div.h5.contenedorBoton
+          a.boton(href="https://wa.me/522281161639?text=Hola%20Ximena,%20soy%20(Poner%20Nombre)%20y%20te%20escribo%20para%20confirmar%20mi%20asistencia.", target="_blank") CONFIRMAR ASISTENCIA
+  
+          
+  div.codigoVestimenta
+      img.imagen-fluida.icono(src="images/vestimenta.svg", alt="")
+      div.h6.titulo CÓDIGO DE VESTIMENTA
+      div.h1.vestimenta Formal de Noche
+  
+  div.mesaRegalos
+      img.imagen-fluida.icono(src="images/regalo.svg", alt="")
+      div.h6.titulo MESA DE REGALOS
+      div.h3.frase
+          | Mi mejor regalo es
+          br
+          | tu presencia, si
+          br
+          | además quisieras
+          br 
+          | hacerme un obsequio
+          br
+          | lo aprecio con 
+          br
+          | agradecimiento.
+      div.liverpool
+          div.h4 LIVERPOOL 
+          div.h5.contenedorBoton
+              a.boton(href="https://mesaderegalos.liverpool.mx/LP/51308331/Ximena_", target="_blank", rel="noopener noreferrer") 51308331
+      //div.datosBancaria
+          div.h4 BBVA 
+          div.contenedorBoton
+              button.h5.boton#toggleBtn DATOS BANCARIOS
+              ul.bancoLista
+                  li.h4.banco CUENTA · 0808080808
+                  li.h4.banco CLABE · 08080808
+                  li.h4.banco TARJETA · 0808080808
+  
+  div.gratitud 
+      div.h2.quote
+          | Los mejores
+          br
+          | momentos de la
+          br
+          | vida merencen ser
+          br 
+          | compartidos.
+      div.agradecimiento
+          div.h1.muchas ¡Gracias por
+          div.h1.gracias Acompañarme!
+  
+  div.exit
+      //img.logo.imagen-fluida(src="images/logo.svg", alt="")
+  
+  //script(src='js/script.js')
+  -->
 </html>
